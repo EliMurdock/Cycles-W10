@@ -24,7 +24,7 @@ class Player_One():
         return player1
 
 #create player 2
-class Player_Two():
+class Player_Two(Player_One):
     def create():
         player2 = turtle.Turtle()
         player2.color("#0000FF")
@@ -35,7 +35,7 @@ class Player_Two():
         return player2
 
 #create writing bot
-class Writing_Bot():
+class Writing_Bot(Player_Two):
     def create():
         writebot = turtle.Turtle()
         writebot.color("white")
